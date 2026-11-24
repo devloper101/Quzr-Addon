@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "qazr-addons",
+  "version": "${version}",
+  "name": "Qazr Addons",
+  "description": "Qazr1234's Meteor addon collection",
+  "authors": ["Qazr1234"],
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.macekill.addon.MaceKillAddon"
+    ]
+  },
+  "mixins": [
+    "qazr-addons.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "255,80,80"
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "java": ">=25",
+    "minecraft": "~26.3",
+    "meteor-client": "*"
+  }
+}
